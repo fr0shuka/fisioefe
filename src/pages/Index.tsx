@@ -18,12 +18,12 @@ const Index = () => {
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <h1 className="text-2xl font-bold text-primary">FisioHub Connect</h1>
           <div className="hidden md:flex space-x-8">
-            <a href="#services" className="text-gray-600 hover:text-primary transition-colors">Services</a>
-            <a href="#about" className="text-gray-600 hover:text-primary transition-colors">About</a>
-            <a href="#team" className="text-gray-600 hover:text-primary transition-colors">Team</a>
-            <a href="#contact" className="text-gray-600 hover:text-primary transition-colors">Contact</a>
+            <a href="#services" className="text-gray-600 hover:text-primary transition-colors">Serviços</a>
+            <a href="#about" className="text-gray-600 hover:text-primary transition-colors">Sobre</a>
+            <a href="#team" className="text-gray-600 hover:text-primary transition-colors">Equipa</a>
+            <a href="#contact" className="text-gray-600 hover:text-primary transition-colors">Contacto</a>
           </div>
-          <Button className="bg-primary hover:bg-primary/90">Book Now</Button>
+          <Button className="bg-primary hover:bg-primary/90">Marcar Consulta</Button>
         </div>
       </nav>
 
@@ -37,17 +37,17 @@ const Index = () => {
             className="max-w-3xl mx-auto text-center"
           >
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-              Expert Physiotherapy Care for Your Well-being
+              Cuidados de Fisioterapia Especializados para o Seu Bem-Estar
             </h1>
             <p className="text-xl text-gray-600 mb-8">
-              Professional treatment tailored to your needs, helping you recover and maintain optimal health.
+              Tratamento profissional adaptado às suas necessidades, ajudando-o a recuperar e manter uma saúde ótima.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button className="bg-primary hover:bg-primary/90 text-lg px-8 py-6">
-                Book Appointment
+                Marcar Consulta
               </Button>
               <Button variant="outline" className="text-lg px-8 py-6">
-                Learn More
+                Saber Mais
               </Button>
             </div>
           </motion.div>
@@ -66,8 +66,8 @@ const Index = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
-            <p className="text-lg text-gray-600">Comprehensive physiotherapy solutions for various conditions</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Os Nossos Serviços</h2>
+            <p className="text-lg text-gray-600">Soluções completas de fisioterapia para várias condições</p>
           </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {services.map((service, index) => (
@@ -96,22 +96,22 @@ const Index = () => {
               transition={{ duration: 0.6 }}
               className="space-y-6"
             >
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Contact Us</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Contacte-nos</h2>
               <div className="flex items-center space-x-4">
                 <Phone className="w-6 h-6 text-primary" />
-                <p className="text-lg">+1 234 567 890</p>
+                <p className="text-lg">+351 234 567 890</p>
               </div>
               <div className="flex items-center space-x-4">
                 <Mail className="w-6 h-6 text-primary" />
-                <p className="text-lg">contact@fisiohub.com</p>
+                <p className="text-lg">contacto@fisiohub.pt</p>
               </div>
               <div className="flex items-center space-x-4">
                 <MapPin className="w-6 h-6 text-primary" />
-                <p className="text-lg">123 Therapy Street, Health City</p>
+                <p className="text-lg">Rua da Terapia 123, Cidade da Saúde</p>
               </div>
               <div className="flex items-center space-x-4">
                 <Clock className="w-6 h-6 text-primary" />
-                <p className="text-lg">Mon - Fri: 9:00 - 18:00</p>
+                <p className="text-lg">Seg - Sex: 9:00 - 18:00</p>
               </div>
             </motion.div>
             <motion.form
@@ -122,20 +122,20 @@ const Index = () => {
             >
               <input
                 type="text"
-                placeholder="Your Name"
+                placeholder="O Seu Nome"
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
               />
               <input
                 type="email"
-                placeholder="Your Email"
+                placeholder="O Seu Email"
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
               />
               <textarea
-                placeholder="Your Message"
+                placeholder="A Sua Mensagem"
                 rows={4}
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
               />
-              <Button className="w-full bg-primary hover:bg-primary/90">Send Message</Button>
+              <Button className="w-full bg-primary hover:bg-primary/90">Enviar Mensagem</Button>
             </motion.form>
           </div>
         </div>
@@ -147,28 +147,28 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
               <h3 className="text-xl font-bold mb-4 text-primary">FisioHub Connect</h3>
-              <p className="text-gray-600">Professional physiotherapy services focused on your well-being and recovery.</p>
+              <p className="text-gray-600">Serviços profissionais de fisioterapia focados no seu bem-estar e recuperação.</p>
             </div>
             <div>
-              <h3 className="text-xl font-bold mb-4 text-primary">Quick Links</h3>
+              <h3 className="text-xl font-bold mb-4 text-primary">Links Rápidos</h3>
               <ul className="space-y-2">
-                <li><a href="#services" className="text-gray-600 hover:text-primary transition-colors">Services</a></li>
-                <li><a href="#about" className="text-gray-600 hover:text-primary transition-colors">About</a></li>
-                <li><a href="#team" className="text-gray-600 hover:text-primary transition-colors">Team</a></li>
-                <li><a href="#contact" className="text-gray-600 hover:text-primary transition-colors">Contact</a></li>
+                <li><a href="#services" className="text-gray-600 hover:text-primary transition-colors">Serviços</a></li>
+                <li><a href="#about" className="text-gray-600 hover:text-primary transition-colors">Sobre</a></li>
+                <li><a href="#team" className="text-gray-600 hover:text-primary transition-colors">Equipa</a></li>
+                <li><a href="#contact" className="text-gray-600 hover:text-primary transition-colors">Contacto</a></li>
               </ul>
             </div>
             <div>
-              <h3 className="text-xl font-bold mb-4 text-primary">Working Hours</h3>
+              <h3 className="text-xl font-bold mb-4 text-primary">Horário de Funcionamento</h3>
               <ul className="space-y-2 text-gray-600">
-                <li>Monday - Friday: 9:00 - 18:00</li>
-                <li>Saturday: 9:00 - 14:00</li>
-                <li>Sunday: Closed</li>
+                <li>Segunda - Sexta: 9:00 - 18:00</li>
+                <li>Sábado: 9:00 - 14:00</li>
+                <li>Domingo: Fechado</li>
               </ul>
             </div>
           </div>
           <div className="border-t border-primary/20 mt-8 pt-8 text-center text-gray-600">
-            <p>&copy; {new Date().getFullYear()} FisioHub Connect. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} FisioHub Connect. Todos os direitos reservados.</p>
           </div>
         </div>
       </footer>
@@ -178,16 +178,16 @@ const Index = () => {
 
 const services = [
   {
-    title: "Sports Physiotherapy",
-    description: "Specialized treatment for sports-related injuries and performance enhancement.",
+    title: "Fisioterapia Desportiva",
+    description: "Tratamento especializado para lesões desportivas e melhoria de desempenho.",
   },
   {
-    title: "Manual Therapy",
-    description: "Hands-on techniques to treat musculoskeletal pain and dysfunction.",
+    title: "Terapia Manual",
+    description: "Técnicas manuais para tratar dor e disfunção musculoesquelética.",
   },
   {
-    title: "Rehabilitation",
-    description: "Comprehensive programs for post-surgery and injury recovery.",
+    title: "Reabilitação",
+    description: "Programas completos para recuperação pós-cirúrgica e de lesões.",
   },
 ];
 
