@@ -142,32 +142,32 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12">
+      <footer className="bg-primary/10 text-gray-800 py-12">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
-              <h3 className="text-xl font-bold mb-4">FisioHub Connect</h3>
-              <p className="text-gray-400">Professional physiotherapy services focused on your well-being and recovery.</p>
+              <h3 className="text-xl font-bold mb-4 text-primary">FisioHub Connect</h3>
+              <p className="text-gray-600">Professional physiotherapy services focused on your well-being and recovery.</p>
             </div>
             <div>
-              <h3 className="text-xl font-bold mb-4">Quick Links</h3>
+              <h3 className="text-xl font-bold mb-4 text-primary">Quick Links</h3>
               <ul className="space-y-2">
-                <li><a href="#services" className="text-gray-400 hover:text-white transition-colors">Services</a></li>
-                <li><a href="#about" className="text-gray-400 hover:text-white transition-colors">About</a></li>
-                <li><a href="#team" className="text-gray-400 hover:text-white transition-colors">Team</a></li>
-                <li><a href="#contact" className="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                <li><a href="#services" className="text-gray-600 hover:text-primary transition-colors">Services</a></li>
+                <li><a href="#about" className="text-gray-600 hover:text-primary transition-colors">About</a></li>
+                <li><a href="#team" className="text-gray-600 hover:text-primary transition-colors">Team</a></li>
+                <li><a href="#contact" className="text-gray-600 hover:text-primary transition-colors">Contact</a></li>
               </ul>
             </div>
             <div>
-              <h3 className="text-xl font-bold mb-4">Working Hours</h3>
-              <ul className="space-y-2 text-gray-400">
+              <h3 className="text-xl font-bold mb-4 text-primary">Working Hours</h3>
+              <ul className="space-y-2 text-gray-600">
                 <li>Monday - Friday: 9:00 - 18:00</li>
                 <li>Saturday: 9:00 - 14:00</li>
                 <li>Sunday: Closed</li>
               </ul>
             </div>
           </div>
-          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+          <div className="border-t border-primary/20 mt-8 pt-8 text-center text-gray-600">
             <p>&copy; {new Date().getFullYear()} FisioHub Connect. All rights reserved.</p>
           </div>
         </div>
