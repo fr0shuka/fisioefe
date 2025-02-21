@@ -11,6 +11,13 @@ const Index = () => {
     setIsVisible(true);
   }, []);
 
+  const handleWhatsAppClick = () => {
+    const phoneNumber = "351234567890"; // Replace with your actual WhatsApp number
+    const message = "Olá! Gostaria de marcar uma consulta de fisioterapia.";
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+  };
+
   return (
     <div className="min-h-screen bg-background">
       {/* Navigation */}
@@ -26,7 +33,12 @@ const Index = () => {
             <a href="#team" className="text-gray-600 hover:text-primary transition-colors">Equipa</a>
             <a href="#contact" className="text-gray-600 hover:text-primary transition-colors">Contacto</a>
           </div>
-          <Button className="bg-primary hover:bg-primary/90">Marcar Consulta</Button>
+          <Button 
+            className="bg-primary hover:bg-primary/90"
+            onClick={handleWhatsAppClick}
+          >
+            Marcar Consulta
+          </Button>
         </div>
       </nav>
 
@@ -46,7 +58,10 @@ const Index = () => {
               Tratamento profissional adaptado às suas necessidades, ajudando-o a recuperar e manter uma saúde ótima.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="bg-primary hover:bg-primary/90 text-lg px-8 py-6">
+              <Button 
+                className="bg-primary hover:bg-primary/90 text-lg px-8 py-6"
+                onClick={handleWhatsAppClick}
+              >
                 Marcar Consulta
               </Button>
               <Button variant="outline" className="text-lg px-8 py-6">
