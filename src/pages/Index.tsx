@@ -12,7 +12,7 @@ const Index = () => {
   }, []);
 
   const handleWhatsAppClick = () => {
-    const phoneNumber = "351234567890"; // Replace with your actual WhatsApp number
+    const phoneNumber = "351928059726"; // Replace with your actual WhatsApp number
     const message = "Olá! Gostaria de marcar uma consulta de fisioterapia.";
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
