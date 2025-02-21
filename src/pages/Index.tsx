@@ -16,7 +16,7 @@ const Index = () => {
       {/* Navigation */}
       <nav className="fixed w-full bg-white/80 backdrop-blur-sm z-50 border-b">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <h1 className="text-2xl font-bold text-primary">FisioHub Connect</h1>
+       <h1 className="text-2xl font-bold text-primary">Fisioefe</h1>
           <div className="hidden md:flex space-x-8">
             <a href="#services" className="text-gray-600 hover:text-primary transition-colors">Serviços</a>
             <a href="#about" className="text-gray-600 hover:text-primary transition-colors">Sobre</a>
