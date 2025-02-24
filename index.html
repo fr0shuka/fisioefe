@@ -8,7 +8,7 @@
     <meta name="description" content="Serviços profissionais de fisioterapia focados no seu bem-estar e recuperação, Santa Maria da Feira" />
     <meta name="author" content="Fisioefe" />
     <meta property="og:image" content="/og-image.png" />
-    <link rel="icon" type="image/png" href="/Fisioefe.png" />
+    <link rel="icon" type="image/png" href="public/Fisioefe.png" />
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
   </head>
@@ -16,10 +16,10 @@
     <!-- Navigation -->
     <nav class="nav">
       <div class="nav-container">
-        <div class="nav-logo">
-          <img src="/Fisioefe.png" alt="Fisioefe Logo" class="logo-img">
+        <a href="index.html" font-transform="none"><div class="nav-logo">
+          <img src="public/Fisioefe.png" alt="Fisioefe Logo" class="logo-img">
           <h1 class="logo-text">Fisioefe</h1>
-        </div>
+        </div></a>
         <div class="nav-links">
           <a href="index.html" class="nav-link">Home</a>
           <a href="team.html" class="nav-link">Equipa</a>
@@ -34,40 +34,55 @@
     <section class="hero">
       <div class="container">
         <div class="hero-content fade-in">
-          <h1 class="hero-title">Cuidados de Fisioterapia Especializados para o Seu Bem-Estar</h1>
+          <h1 class="hero-title">Cuidados de Fisioterapia especializados para o seu Bem-Estar</h1>
           <p class="hero-description">Tratamento profissional adaptado às suas necessidades, ajudando-o a recuperar e manter uma saúde ótima.</p>
           <div class="hero-buttons">
             <button class="primary-button" onclick="handleWhatsAppClick()">Marcar Consulta</button>
-            <button class="secondary-button">Saber Mais</button>
+            <a href="#contact"><button class="secondary-button">Saber Mais</button></a>
           </div>
         </div>
       </div>
-      <div class="scroll-indicator">
-        <svg class="chevron-down" viewBox="0 0 24 24" width="32" height="32">
-          <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" fill="none"/>
-        </svg>
-      </div>
+      
     </section>
 
     <!-- Services Section -->
     <section id="services" class="services">
       <div class="container">
         <div class="section-header fade-in">
-          <h2 class="section-title">Os Nossos Serviços</h2>
+          <h2 class="section-title">Os nossos serviços</h2>
           <p class="section-description">Soluções completas de fisioterapia para várias condições</p>
         </div>
         <div class="services-grid">
           <div class="service-card fade-in">
-            <h3>Fisioterapia Desportiva</h3>
-            <p>Tratamento especializado para lesões desportivas e melhoria de desempenho.</p>
+            <h3>Fisioterapia Avançada</h3>
+            <p>Esta especialidade preocupa-se sobretudo com o utente que apresenta queixas referentes a ossos e articulações ou mesmo lesões traumáticas agudas (ruptura de ligamentos), — tendinites, rupturas musculares, etc.</p>
           </div>
           <div class="service-card fade-in">
-            <h3>Terapia Manual</h3>
-            <p>Técnicas manuais para tratar dor e disfunção musculoesquelética.</p>
+            <h3>Osteopatia</h3>
+            <p>A osteopatia é um sistema autónomo de cuidados de saúde primário, que aborda o indivíduo de uma forma global, centrando-se nas causas e não apenas nos sintomas que este apresenta.
+
+              A osteopatia é baseada no princípio de que o bem-estar depende do bom funcionamento de todos os sistemas. </p>
           </div>
           <div class="service-card fade-in">
             <h3>Reabilitação</h3>
-            <p>Programas completos para recuperação pós-cirúrgica e de lesões.</p>
+            <p>Fisioterapia presta cuidados a crianças e adultos de todas as faixas etárias com doenças que requeiram a sua intervenção.
+              <ul>
+                <li>Reabilitação ortopédica;</li>
+                <li>Reabilitação neurológica;</li>
+                <li>Reabilitação respiratória;</li>
+                <li>Reabilitação após lesões desportivas;</li>
+                <li>Cinesiterapia respiratória;</li>
+                <li>Reeducação postural.</li>
+               </ul>
+            </p>
+          </div>
+          <div class="service-card fade-in">
+            <h3>Pilates Clínico </h3>
+            <p>O Pilates Clínico corrige posturas erradas; alivia dores de costas; fortalece os músculos estabilizadores da coluna; melhora o alinhamento corporal e equilíbrio. </p>
+          </div>
+          <div class="service-card fade-in">
+            <h3>Saúde da Mulher </h3>
+            <p>A Fisioterapia na Saúde da Mulher é o tratamento terapêutico de todas as disfunções que afectam a pélvis e o pavimento pélvico. </p>
           </div>
         </div>
       </div>
@@ -81,27 +96,22 @@
             <h2 class="section-title">Contacte-nos</h2>
             <div class="contact-item">
               <svg class="icon" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-              <p>+351 234 567 890</p>
+             <a href="tel:+351928059726"><p>+351 928 059 726</p></a>
             </div>
             <div class="contact-item">
               <svg class="icon" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="M22 6l-10 7L2 6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-              <p>contacto@fisiohub.pt</p>
+             <a href="mailto:geral@fisioefe.pt"><p>geral@fisioefe.pt</p></a>
             </div>
             <div class="contact-item">
               <svg class="icon" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><circle cx="12" cy="10" r="3" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-              <p>Rua da Terapia 123, Cidade da Saúde</p>
+              <p>Santa Maria da Feira, Portugal</p>
             </div>
             <div class="contact-item">
               <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path d="M12 6v6l4 2" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
-              <p>Seg - Sex: 9:00 - 18:00</p>
+              <p>Seg - Sex: 9:00 - 19:30</p>
             </div>
           </div>
-          <form class="contact-form fade-in" onsubmit="handleSubmit(event)">
-            <input type="text" placeholder="O Seu Nome" required>
-            <input type="email" placeholder="O Seu Email" required>
-            <textarea placeholder="A Sua Mensagem" rows="4" required></textarea>
-            <button type="submit" class="primary-button">Enviar Mensagem</button>
-          </form>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3796.093165004569!2d-8.583632423411302!3d40.91813682496966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd238700061194ab%3A0xb270842e9c4eb682!2sFisioefe%20-%20Fisioterapia%20e%20Bem%20Estar!5e1!3m2!1sen!2spt!4v1740412154195!5m2!1sen!2spt" width="800" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </section>
@@ -111,14 +121,20 @@
       <div class="container">
         <div class="footer-grid">
           <div class="footer-section">
-            <h3>FisioHub Connect</h3>
+            <h3>Fisioefe</h3>
             <p>Serviços profissionais de fisioterapia focados no seu bem-estar e recuperação.</p>
+            <br>
+            <br>
+            <a class="facebook-link" href="https://www.facebook.com/fisioefe/" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook"></a>
+            <a class="linkedin-link" href="https://www.linkedin.com/company/fisioefe-fisioterapia-e-bem-estar/" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Linkedin-logo-blue-In-square-40px.png?20231202105023" alt="LinkedIn">
+            </a>
           </div>
           <div class="footer-section">
             <h3>Links Rápidos</h3>
             <ul>
               <li><a href="#services">Serviços</a></li>
-              <li><a href="#about">Sobre</a></li>
               <li><a href="team.html">Equipa</a></li>
               <li><a href="#contact">Contacto</a></li>
             </ul>
@@ -126,19 +142,20 @@
           <div class="footer-section">
             <h3>Horário de Funcionamento</h3>
             <ul>
-              <li>Segunda - Sexta: 9:00 - 18:00</li>
-              <li>Sábado: 9:00 - 14:00</li>
+              <li>Segunda - Sexta: 9:00 - 19:30</li>
+              <li>Sábado: 9:00 - 13:00</li>
               <li>Domingo: Fechado</li>
             </ul>
           </div>
         </div>
         <div class="footer-bottom">
-          <p>&copy; <span id="currentYear"></span> FisioHub Connect. Todos os direitos reservados.</p>
+          <p>&copy; <span id="currentYear"></span> Fisioefe. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>
 
     <script src="script.js"></script>
+
   </body>
 </html>
 

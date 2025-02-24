@@ -4,25 +4,12 @@ document.getElementById('currentYear').textContent = new Date().getFullYear();
 
 // WhatsApp click handler
 function handleWhatsAppClick() {
-  const phoneNumber = "351234567890";
+  const phoneNumber = "351928059726";
   const message = "Olá! Gostaria de marcar uma consulta de fisioterapia.";
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
   window.open(whatsappUrl, '_blank');
 }
 
-// Form submission handler
-function handleSubmit(event) {
-  event.preventDefault();
-  const form = event.target;
-  const formData = new FormData(form);
-  
-  // Here you would typically send the form data to your server
-  console.log('Form submitted with data:', Object.fromEntries(formData));
-  
-  // Clear form
-  form.reset();
-  alert('Mensagem enviada com sucesso!');
-}
 
 // Intersection Observer for animations
 const observerOptions = {
