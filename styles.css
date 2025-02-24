@@ -15,7 +15,9 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
+
 }
+
 
 body {
   background-color: var(--background);
@@ -38,7 +40,7 @@ body {
   width: 100%;
   background-color: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(8px);
-  z-index: 1000;
+  z-index: 1;
   border-bottom: 1px solid var(--border);
   
 }
@@ -160,11 +162,6 @@ body {
   justify-content: center;
 }
 
-.scroll-indicator{
-  margin-top: 10px;
-  margin-bottom: 0;
-  text-align: center;
-}
 
 @media (min-width: 640px) {
   .hero-buttons {
@@ -241,9 +238,7 @@ body {
   }
 }
 
-.contact-info {
-  space-y: 1.5rem;
-}
+
 
 .contact-item {
   display: flex;
@@ -344,7 +339,6 @@ body {
   margin-top: 100px;
   margin-bottom: 100px;
 }
-
 /* Team Grid */
 .team-grid {
   display: grid;
@@ -433,16 +427,3 @@ body {
 }
 
 
-/* Animations */
-.fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeIn 0.6s ease-out forwards;
-}
-
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
